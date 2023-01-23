@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapi-demo"
+version = "0.1.0"
+description = ""
+authors = ["Levente Nagy1 <levente_nagy1@epam.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.89.1"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+sqlalchemy = "^1.4.46"
+bs4 = "^0.0.1"
+requests = "^2.28.2"
+pandas = "^1.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
